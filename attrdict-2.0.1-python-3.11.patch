@@ -1,0 +1,48 @@
+diff -up attrdict-2.0.1/attrdict/default.py.omv~ attrdict-2.0.1/attrdict/default.py
+--- attrdict-2.0.1/attrdict/default.py.omv~	2022-09-28 17:09:37.953177775 +0200
++++ attrdict-2.0.1/attrdict/default.py	2022-09-28 17:09:42.071200870 +0200
+@@ -1,7 +1,7 @@
+ """
+ A subclass of MutableAttr that has defaultdict support.
+ """
+-from collections import Mapping
++from collections.abc import Mapping
+ 
+ import six
+ 
+diff -up attrdict-2.0.1/attrdict/mapping.py.omv~ attrdict-2.0.1/attrdict/mapping.py
+--- attrdict-2.0.1/attrdict/mapping.py.omv~	2022-09-28 17:09:15.110049633 +0200
++++ attrdict-2.0.1/attrdict/mapping.py	2022-09-28 17:09:25.192106194 +0200
+@@ -1,7 +1,7 @@
+ """
+ An implementation of MutableAttr.
+ """
+-from collections import Mapping
++from collections.abc import Mapping
+ 
+ import six
+ 
+diff -up attrdict-2.0.1/attrdict/merge.py.omv~ attrdict-2.0.1/attrdict/merge.py
+--- attrdict-2.0.1/attrdict/merge.py.omv~	2022-09-28 17:09:29.593130883 +0200
++++ attrdict-2.0.1/attrdict/merge.py	2022-09-28 17:09:33.632153538 +0200
+@@ -1,7 +1,7 @@
+ """
+ A right-favoring Mapping merge.
+ """
+-from collections import Mapping
++from collections.abc import Mapping
+ 
+ 
+ __all__ = ['merge']
+diff -up attrdict-2.0.1/attrdict/mixins.py.omv~ attrdict-2.0.1/attrdict/mixins.py
+--- attrdict-2.0.1/attrdict/mixins.py.omv~	2022-09-28 17:09:03.687985550 +0200
++++ attrdict-2.0.1/attrdict/mixins.py	2022-09-28 17:09:11.703030520 +0200
+@@ -2,7 +2,7 @@
+ Mixin Classes for Attr-support.
+ """
+ from abc import ABCMeta, abstractmethod
+-from collections import Mapping, MutableMapping, Sequence
++from collections.abc import Mapping, MutableMapping, Sequence
+ import re
+ 
+ import six

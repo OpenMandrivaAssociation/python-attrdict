@@ -1,7 +1,8 @@
 Name:		python-attrdict
 Version:	2.0.1
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/a/attrdict/attrdict-%{version}.tar.gz
+Patch0:		attrdict-2.0.1-python-3.11.patch
 Summary:	A dict with attribute-style access
 URL:		https://pypi.org/project/attrdict/
 License:	MIT License
